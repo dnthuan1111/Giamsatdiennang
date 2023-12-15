@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        th {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+        }
+        table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+        th,td {
+                text-align: center;
+                padding: 8px;
+                border: 1px solid black;
+        }
+
+tr:nth-child(even) {
+  background-color: #faf9f9;
+}
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Thông số</th>
+            <th>Giá trị</th>
+            <th>Ngày</th>
+            <th>Giờ</th>
+            
+        </tr>
+        <tr>
+            <td></span> AC Voltage (RMS) (Vac)</td>
+            <td><span id="FinalRMSVoltageAC">00.00</span></td>
+            <td><span id="vac-date">00/00/0000</span></td>
+            <td><span id="vac-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> DC Voltage (Vdc)</td>
+            <td><span id="finalVoltageDC">00.00</span></td>
+            <td><span id="vdc-date">00/00/0000</span></td>
+            <td><span id="vdc-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> AC Current (RMS) (Iac)</td>
+            <td><span id="FinalRMSCurrentAC">00.00</span></td>
+            <td><span id="iac-date">00/00/0000</span></td>
+            <td><span id="iac-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> DC Current (Idc)</td>
+            <td><span id="finalCurrentDC">00.00</span></td>
+            <td><span id="idc-date">00/00/0000</span></td>
+            <td><span id="idc-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> DC Power (Wdc)</td>
+            <td><span id="finalPowerDC">00.00</span></td>
+            <td><span id="wdc-date">00/00/0000</span></td>
+            <td><span id="wdc-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> DC Accumulated Net Energy (Wh-dc)</td>
+            <td><span id="netEnergyDC">00.00</span></td>
+            <td><span id="netdc-date">00/00/0000</span></td>
+            <td><span id="netdc-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> DC Accumulated Import Energy (Wh-dc)</td>
+            <td><span id="importEnergyDC">00.00</span></td>
+            <td><span id="imdc-date">00/00/0000</span></td>
+            <td><span id="imdc-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> DC Accumulated Export Energy (Wh-dc)</td>
+            <td><span id="exportEnergyDC">00.00</span></td>
+            <td><span id="expdc-date">00/00/0000</span></td>
+            <td><span id="expdc-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> AC Real Power (Wac)</td>
+            <td><span id="realPowerAC">00.00</span></td>
+            <td><span id="wac-date">00/00/0000</span></td>
+            <td><span id="wac-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> AC Apparent Power (VAac)</td>
+            <td><span id="apparentPowerAC">00.00</span></td>
+            <td><span id="appac-date">00/00/0000</span></td>
+            <td><span id="appac-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> Power Factor (Pf)</td>
+            <td><span id="powerFactorAC">00.00</span></td>
+            <td><span id="factac-date">00/00/0000</span></td>
+            <td><span id="factac-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> AC Accumulated Net Energy (Wh-ac)</td>
+            <td><span id="netEnergyAC">00.00</span></td>
+            <td><span id="netac-date">00/00/0000</span></td>
+            <td><span id="netac-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> AC Accumulated Import Energy (Wh-ac)</td>
+            <td><span id="importEnergyAC">00.00</span></td>
+            <td><span id="imac-date">00/00/0000</span></td>
+            <td><span id="imac-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> AC Accumulated Export Energy (Wh-ac)</td>
+            <td><span id="exportEnergyAC">00.00</span></td>
+            <td><span id="expac-date">00/00/0000</span></td>
+            <td><span id="expac-time">00:00:00</span></td>
+        </tr>
+        <tr>
+            <td></span> Frequency (Hz)</td>
+            <td><span id="frequencyAC">00.00</span></td>
+            <td><span id="fac-date">00/00/0000</span></td>
+            <td><span id="fac-time">00:00:00</span></td>
+        </tr>
+        
+    </table>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="hienthi.js"></script>
+</body>
+</html>
